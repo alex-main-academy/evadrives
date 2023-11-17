@@ -1,0 +1,143 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 4rem 0;
+
+    @media screen and (max-width:1200px) {}
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header__list {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    @media screen and (max-width:1200px) {
+        display: none;
+    }
+}
+
+.header__link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition-duration: 300ms;
+
+    &:hover {
+        color: var(--accent-text-color);
+    }
+}
+
+.header__lang {
+    position: relative;
+    margin-left: 5rem;
+    width: 7rem;
+    height: 4rem;
+    background-color: rgba(108, 108, 108, 0.351);
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    transition-duration: 300ms;
+
+    @media screen and (max-width:1200px) {
+        display: none;
+    }
+
+    @media screen and (max-width:767px) {
+        display: flex;
+    }
+}
+
+.header__lang.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    .another__lang {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .current__lang img {
+        transform: rotate(-180deg);
+    }
+}
+
+.current__lang {
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 500;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    transition-duration: 300ms;
+
+    img {
+        transition-duration: 300ms;
+    }
+}
+
+.another__lang {
+    position: absolute;
+    bottom: -4rem;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(108, 108, 108, 0.351);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top: .1rem solid #7a7a7a;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0;
+    visibility: hidden;
+
+    transition-duration: 300ms;
+
+    &:hover {
+        color: var(--accent-text-color)
+    }
+}
+
+.header__menu {
+    display: none;
+
+    @media screen and (max-width:1200px) {
+        display: block;
+    }
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}

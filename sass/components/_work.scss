@@ -1,0 +1,154 @@
+.work {
+    padding: 7.5rem 0;
+    background-color: #000000;
+
+    @media screen and (max-width:767px) {
+        padding-top: 0;
+        padding-bottom: 7rem;
+    }
+}
+
+.work .container {
+    position: relative;
+}
+
+.work__title {
+    font-size: 5.6rem;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    @media screen and (max-width:1200px) {
+        font-size: 4.7rem;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 3.8rem;
+    }
+}
+
+.work__list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 16rem;
+    row-gap: 6rem;
+
+    @media screen and (max-width:1200px) {
+        padding-left: 15rem;
+    }
+
+    @media screen and (max-width:767px) {
+        padding-left: 10rem;
+        row-gap: 4rem;
+    }
+}
+
+.work__item {
+    width: calc((100% - 16rem) / 2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &:nth-child(1) {
+        margin-left: auto;
+
+        @media screen and (max-width:1200px) {
+            margin-left: 0;
+        }
+    }
+
+    &:nth-child(3n) {
+        margin-left: auto;
+
+        @media screen and (max-width:1200px) {
+            margin-left: 0;
+        }
+    }
+
+    &:nth-child(2n) {
+        text-align: right;
+
+        @media screen and (max-width:1200px) {
+            text-align: left;
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        width: 100%;
+    }
+}
+
+.work__subtitle {
+    font-size: 2.4rem;
+
+    @media screen and (max-width:1200px) {
+        line-height: 1.2;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 2rem;
+    }
+}
+
+.work__desc {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.number__list {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: .3rem;
+        height: 100%;
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    @media screen and (max-width:1200px) {
+        left: 0;
+        transform: translate(0);
+    }
+
+    @media screen and (max-width:767px) {
+        top: 8rem;
+        gap: 16rem;
+    }
+}
+
+.number__item {
+    z-index: 2;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: var(--red-back-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 3.6rem;
+    }
+
+    @media screen and (max-width:767px) {
+        width: 7rem;
+        height: 7rem;
+
+        span {
+            font-weight: 700;
+            font-size: 2.2rem;
+        }
+    }
+}

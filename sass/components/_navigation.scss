@@ -1,0 +1,34 @@
+.navigation {
+    display: none;
+
+    @media screen and (max-width:767px) {
+        display: block;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: var(--red-back-color);
+        padding: 1.5rem 0;
+    }
+}
+
+.navigation__list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+.navigation__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
