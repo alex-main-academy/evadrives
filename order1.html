@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set de bază</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="order__page">
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo header__logo">
+                EVA_DRIVES
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="index.html#home" class="header__link">ACASĂ</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="index.html#feature" class="header__link">DESPRE NOI</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="index.html#catalog" class="header__link">CATEGORII PRODUSE</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">RECENZII</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">GALERIE</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="index.html#faq" class="header__link">FAQ</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="index.html#order" class="header__link">CONTACTAŢI-NE</a>
+                    </li>
+                </ul>
+                <div class="header__lang js-change-lang">
+                    <a class="current__lang">
+                        RO
+                        <img src="img/header/arrow.png" alt="Covorase auto de noua generatie in Romania" width="10"
+                            height="10">
+                    </a>
+                    <a href="" class="another__lang">ENG</a>
+                </div>
+            </nav>
+            <button class="header__menu js-menu-open">
+                <img src="img/header/menu.png" alt="Covorase auto de noua generatie in Romania" width="32" height="32">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="product">
+            <div class="container">
+                <div class="product__slider">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/product_1/img1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product_1/img2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product_1/img3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product_1/img4.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper swiper-thumb">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/product_1/img1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product_1/img2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product_1/img3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product_1/img4.webp" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide-count js-gallery-open">
+                                <span class="swiper-count">+74</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__content">
+                    <span class="product__yes">În stoc</span>
+                    <h2 class="product__title">Set de bază</h2>
+                    <div class="product__prices">
+                        <span class="product__price_old">1 280,00UAH</span>
+                        <span class="product__price_new">1 100,00UAH</span>
+                    </div>
+                    <div class="product__choose">
+                        <label class="product__choose_color product__choose_item">
+                            <span>Culoare covor:</span>
+                            <select class="product__select js-select-color">
+                                <option value="black">Negru</option>
+                                <option value="gray">Gri</option>
+                                <option value="brown">Maro</option>
+                                <option value="blue">Albastru</option>
+                                <option value="red">Roșu</option>
+                                <option value="elephant">Ivoriu</option>
+                                <option value="light">Bej</option>
+                                <option value="haki">Khaki</option>
+                                <option value="purple">Albastru închis</option>
+                            </select>
+                        </label>
+                        <label class="product__choose_border product__choose_item">
+                            <span>Culoare tivire:</span>
+                            <select class="product__select js-select-border">
+                                <option value="black">Negru</option>
+                                <option value="gray">Gri</option>
+                                <option value="brown">Maro</option>
+                                <option value="blue">Albastru</option>
+                                <option value="red">Roșu</option>
+                                <option value="orange">Portocaliu</option>
+                                <option value="yellow">Galben</option>
+                                <option value="green">Verde</option>
+                                <option value="light">Bej</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label class="product__choose_firm product__choose_item">
+                        <span>Plachetă cu logo (emblema mașinii):</span>
+                        <select class="product__select">
+                            <option value="">Nu</option>
+                            <option value="">1 plachetă</option>
+                            <option value="">2 plachete</option>
+                        </select>
+                    </label>
+                    <div class="product__order">
+                        <input type="number" value="1" min="0" step="1" max="100" class="product__order_count">
+                        <button class="product__order_button">Comandă produsul</button>
+                    </div>
+                    <div class="order__description">
+                        <p class="order__description_title">Descriere</p>
+                        <p class="order__description_text">
+                            Setul include 2 covoare pentru scaunele din față la autoturism
+                        </p>
+                        <p class="order__description_text">
+                            Preț pentru rândul din față al microbuzelor - 1390 UAH
+                        </p>
+                        <br>
+                        <p class="order__description_text">
+                            Timpul de fabricare:
+                        </p>
+                        <p class="order__description_text">
+                            3-4 zile lucrătoare
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <a href="index.html" class="footer__logo logo">
+                    EVA_DRIVES
+                </a>
+                <a href="tel:+380962687528" class="footer__contact_link">
+                    Telefon: +380962687528
+                </a>
+                <a href="mailto:evadrives@gmail.com" class="footer__contact_link">
+                    E-mail: evadrives@gmail.com
+                </a>
+            </div>
+            <div class="footer__block footer__links">
+                <a href="index.html#home" class="footer__page_link">
+                    Acasă
+                </a>
+                <a href="index.html#feature" class="footer__page_link">
+                    De ce noi
+                </a>
+                <a href="index.html#catalog" class="footer__page_link">
+                    Catalog
+                </a>
+                <a href="index.html#faq" class="footer__page_link">
+                    Întrebări frecvente
+                </a>
+            </div>
+            <div class="footer__block footer__links">
+                <a href="index.html#work" class="footer__page_link">
+                    Cum lucram
+                </a>
+                <a href="" class="footer__page_link">
+                    Recenzii
+                </a>
+                <a href="" class="footer__page_link">
+                    Politica de confidențialitate
+                </a>
+                <a href="" class="footer__page_link">
+                    Contract de ofertă
+                </a>
+            </div>
+            <div class="footer__block">
+                <p class="footer__sign">
+                    Abonați-vă!
+                </p>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="" class="footer__social_link">
+                            <img src="img/hero/instagram.png" alt="Covorase auto de noua generatie in Romania"
+                                width="16" height="16">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__social_link">
+                            <img src="img/hero/tiktok.png" alt="Covorase auto de noua generatie in Romania" width="16"
+                                height="16">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__social_link">
+                            <img src="img/hero/whatsapp.png" alt="Covorase auto de noua generatie in Romania" width="16"
+                                height="16">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="menu js-menu">
+        <div class="container">
+            <button class="menu__close js-menu-close">
+                <img src="img/header/close.png" alt="Covorase auto de noua generatie in Romania" width="32" height="32">
+            </button>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#home" class="menu__link">ACASĂ</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#feature" class="menu__link">DESPRE NOI</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#catalog" class="menu__link">CATEGORII PRODUSE</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">RECENZII</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">GALERIE</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#faq" class="menu__link">FAQ</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#order" class="menu__link">CONTACTAŢI-NE</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">ENG</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product__gallery js-gallery">
+        <button class="product__close js-gallery-close">
+            <img src="img/product_1/close.png" alt="" width="30" height="30">
+        </button>
+        <div class="product__gallery_slider">
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/product_1/img1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/img2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/img3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/img4.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_yellow.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper4 swiper-thumb swiper-gallery-thumb">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/product_1/img1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/img2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/img3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/img4.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/black_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/gray_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/brown_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/blue_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_black.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/red_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/elephant_yellow.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_blue.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_brown.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_gray.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_green.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_light.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_orange.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_red.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/product_1/light_yellow.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/order.js"></script>
+</body>
+
+</html>
