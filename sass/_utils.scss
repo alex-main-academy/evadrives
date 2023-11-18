@@ -5,6 +5,7 @@ html {
 body {
     font-family: var(--primary-font);
     color: var(--primary-text-color);
+    background-color: #000000;
 
     &.is-menu-open {
         overflow: hidden;
@@ -22,7 +23,11 @@ body {
     }
 
     @media screen and (max-width:767px) {
-        max-width: 32rem;
+        max-width: 37rem;
         padding: 0;
+    }
+
+    @media screen and (max-width:390px) {
+        max-width: 32rem;
     }
 }

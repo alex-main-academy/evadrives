@@ -123,6 +123,11 @@
 
     @media screen and (max-width:767px) {
         top: 8rem;
+        gap: 13rem;
+    }
+
+    @media screen and (max-width:390px) {
+        top: 8rem;
         gap: 16rem;
     }
 }

@@ -9,6 +9,11 @@
         Covorase auto de noua generatie in Romania
     </title>
     <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.css"
+        integrity="sha512-ka1/Z+PCN6JAoOVT50Ujjhq74r3hE0r433lM5X3VlLmxXRRkAJIPSXiZlccGx6Syd56QW+rPoYaLHm5iIPthLg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/twentytwenty.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -21,13 +26,13 @@
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#" class="header__link">ACASĂ</a>
+                        <a href="#home" class="header__link">ACASĂ</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">DESPRE NOI</a>
+                        <a href="#feature" class="header__link">DESPRE NOI</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">CATEGORII PRODUSE</a>
+                        <a href="#catalog" class="header__link">CATEGORII PRODUSE</a>
                     </li>
                     <li class="header__item">
                         <a href="#" class="header__link">RECENZII</a>
@@ -36,10 +41,10 @@
                         <a href="#" class="header__link">GALERIE</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">FAQ</a>
+                        <a href="#faq" class="header__link">FAQ</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">CONTACTAŢI-NE</a>
+                        <a href="#order" class="header__link">CONTACTAŢI-NE</a>
                     </li>
                 </ul>
                 <div class="header__lang js-change-lang">
@@ -58,7 +63,7 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="container">
                 <h1 class="hero__title">
                     Covorase auto de noua generatie in Romania
@@ -74,7 +79,7 @@
                     і <b>vă vom trimite exemple și preturi</b>
                 </p>
                 <div class="hero__buttons">
-                    <a href="" class="hero__order">Trimite Comanda</a>
+                    <a href="#order" class="hero__order">Trimite Comanda</a>
                     <ul class="hero__list">
                         <li class="hero__item">
                             <a href="" class="hero__link">
@@ -99,7 +104,7 @@
             </div>
         </section>
 
-        <section class="feature">
+        <section class="feature" id="feature">
             <div class="container">
                 <h2 class="feature__title">
                     De ce noi?
@@ -160,7 +165,7 @@
             </div>
         </section>
 
-        <section class="catalog">
+        <section class="catalog" id="catalog">
             <div class="container">
                 <h2 class="catalog__title">Catalog</h2>
                 <ul class="catalog__list">
@@ -216,7 +221,7 @@
             </div>
         </section>
 
-        <section class="work">
+        <section class="work" id="work">
             <div class="container">
                 <h2 class="work__title">
                     Cum lucrăm
@@ -283,10 +288,396 @@
                 </ul>
             </div>
         </section>
+
+        <section class="order" id="order">
+            <div class="container">
+                <div class="order__text">
+                    <h2 class="order__title">
+                        Aplicație pentru
+                        design individual
+                    </h2>
+                    <p class="order__desc">
+                        Lăsați detaliile dvs. de contact mai jos și managerul nostru vă va suna în 15 minute
+                    </p>
+                </div>
+                <form class="order__form">
+                    <input type="text" name="name" placeholder="Nume si Prenume" required class="order__input">
+                    <input type="text" name="phone" placeholder="Telefon" required minlength="8" maxlength="15"
+                        pattern="[0-9+]*" class="order__input">
+                    <input type="text" name="model" placeholder="Marca (model/an/careseria)" required minlength="5"
+                        class="order__input">
+                    <button class="order__button" type="submit">Trimite Comanda</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="before" id="before">
+            <div class="container">
+                <h2 class="before__title">
+                    Inainte si dupa
+                </h2>
+                <div id="beforeAfterContainer">
+                    <img src="img/before/img1.png" alt="Covorase auto de noua generatie in Romania" />
+                    <img src="img/before/img2.png" alt="Covorase auto de noua generatie in Romania" />
+                </div>
+            </div>
+        </section>
+
+        <section class="example" id="example">
+            <div class="container">
+                <h2 class="example__title">
+                    Lucrările noastre
+                </h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper gallery">
+                        <a href="img/example/img1.jpg" class="swiper-slide">
+                            <img src="img/example/img1.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img2.jpg" class="swiper-slide">
+                            <img src="img/example/img2.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img3.jpg" class="swiper-slide">
+                            <img src="img/example/img3.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img4.jpg" class="swiper-slide">
+                            <img src="img/example/img4.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img5.jpg" class="swiper-slide">
+                            <img src="img/example/img5.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img6.jpg" class="swiper-slide">
+                            <img src="img/example/img6.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img7.jpg" class="swiper-slide">
+                            <img src="img/example/img7.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img8.jpg" class="swiper-slide">
+                            <img src="img/example/img8.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img9.jpg" class="swiper-slide">
+                            <img src="img/example/img9.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img10.jpg" class="swiper-slide">
+                            <img src="img/example/img10.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img11.jpg" class="swiper-slide">
+                            <img src="img/example/img11.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img12.jpg" class="swiper-slide">
+                            <img src="img/example/img12.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img13.jpg" class="swiper-slide">
+                            <img src="img/example/img13.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img14.jpg" class="swiper-slide">
+                            <img src="img/example/img14.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img15.jpg" class="swiper-slide">
+                            <img src="img/example/img15.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img16.jpg" class="swiper-slide">
+                            <img src="img/example/img16.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img17.jpg" class="swiper-slide">
+                            <img src="img/example/img17.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img18.jpg" class="swiper-slide">
+                            <img src="img/example/img18.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img19.jpg" class="swiper-slide">
+                            <img src="img/example/img19.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img20.jpg" class="swiper-slide">
+                            <img src="img/example/img20.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="faq__title">
+                    Întrebări frecvente
+                </h2>
+                <div class="faq__content">
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Care este durata de viață a covorașelor auto?
+                            </h3>
+                            <p class="faq__desc">
+                                Deoarece utilizăm materiale de cea mai înaltă calitate, durata de viață poate ajunge
+                                până la 5 ani.
+                                Durata de viață depinde de stilul de condus al proprietarului și de condițiile în care
+                                sunt utilizate
+                                covorașele.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Cum se efectuează plata?
+                            </h3>
+                            <p class="faq__desc">
+                                Avans simbolic, exclusiv în contul oficial.
+                                Covorașele sunt confecționate într-un singur variant special pentru dvs. (în funcție de
+                                culoarea, marginea și, dacă este necesar, cu accesorii). Din păcate, au existat cazuri
+                                când s-au comandat covorașe fără avans și persoanele nu au venit să le ridice,
+                                lăsându-ne cu covorașele care nu se potriveau nimănui.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Cum se atașează covorașele?
+                            </h3>
+                            <p class="faq__desc">
+                                Covorașele sunt atașate cu ajutorul sistemelor originale de prindere, dacă acestea sunt
+                                disponibile la producătorul mașinii, sau cu ajutorul sistemelor de fixare cu scai.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Care este perioada de garanție pentru covorașe?
+                            </h3>
+                            <p class="faq__desc">
+                                Pentru covorașele EVADRIVES - 1 an.
+                                În cazul în care covorașele se rup, le înlocuim cu altele noi.
+                                Cu toate acestea, nu am avut încă astfel de cazuri.)))
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Ce material folosiți?
+                            </h3>
+                            <p class="faq__desc">
+                                Pentru fabricarea covorașelor folosim un material inovator cu o structură poroasă în
+                                formă de "romb" (EVA sau Sevelen). Avantaje: ușor și în același timp rezistent,
+                                funcțional și cu un aspect estetic plăcut. De asemenea, are capacitatea de a reține o
+                                cantitate mare de lichide, lipsa mirosului, rezistența la substanțe chimice, siguranța
+                                absolută pentru sănătate și mediu, menținând toate caracteristicile la temperaturi
+                                cuprinse între +50°C și -50°C.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Ce materiale sunt utilizate pentru covoarele auto și care sunt diferențele dintre ele?
+                            </h3>
+                            <p class="faq__desc">
+                                Folosim două tipuri de piele ecologică și alcantara. Alcantara: se curăță ușor și
+                                păstrează căldura în timpul iernii, iar vara nu transpiră. Piele ecologică: se șterge
+                                ușor cu o cârpă și nu lasă să treacă umiditatea.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                La ce sunt destinate husele?
+                            </h3>
+                            <p class="faq__desc">
+                                Husele protejează perfect interiorul mașinii dvs. de murdărie și nu lasă să treacă
+                                umezeala.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Ce să fac dacă covorașele nu se potrivesc?
+                            </h3>
+                            <p class="faq__desc">
+                                Oferim posibilitatea de schimb în termen de 14 zile în cazul în care produsul nu
+                                corespunde.
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="faq__list">
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Ce trebuie făcut dacă nuanțele nu sunt potrivite?
+                            </h3>
+                            <p class="faq__desc">
+                                Husele sunt universale (se potrivesc la aproape toate mașinile), dar țin cont și de
+                                marca mașinii dvs. Este posibil să faceți schimb sau să returnați în termen de 14 zile.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Au covoarele un miros neplăcut?
+                            </h3>
+                            <p class="faq__desc">
+                                Deoarece covoarele sunt noi și vin ambalate, ele pot avea un miros ușor de material, dar
+                                acest miros dispare într-o zi. Nu folosim materiale turcești sau chinezești cu miros
+                                persistent neplăcut.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                De ce este necesară protecția pentru spătarul scaunului?
+                            </h3>
+                            <p class="faq__desc">
+                                Dacă aveți animale de companie sau copii, aceasta este o opțiune excelentă pentru a nu
+                                deteriora și a nu murdări spătarul scaunului.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Se poate realiza o covoraș personalizat din materialul EVA (pentru animale, culoare
+                                etc.)?
+                            </h3>
+                            <p class="faq__desc">
+                                Desigur! Lăsați o solicitare pe site sau scrieți pe Instagram, specificați dimensiunile,
+                                iar managerul vă va calcula prețul.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                Cum să spăl covorașele auto Evadrives?
+                            </h3>
+                            <p class="faq__desc">
+                                În starea suspendată, le puteți spăla cu un Kärcher dacă sunt ușor murdare, sau le
+                                puteți șterge cu o cârpă umedă dacă sunt doar cu nisip.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                De ce este necesar un suport pentru călcâie și cum să-l fixați?
+                            </h3>
+                            <p class="faq__desc">
+                                Suportul pentru călcâie se montează la înălțimea dumneavoastră. Acest lucru durează
+                                câteva minute, în funcție de confortul fiecăruia. Suportul pentru călcâie prelungește
+                                durata de utilizare a covorașelor, deoarece încălțămintea cu tălpi dure sporește uzura
+                                covorașului.
+                            </p>
+                        </li>
+                        <li class="faq__item">
+                            <img src="img/faq/arrow.svg" alt="Covoare auto de ultimă generație în România" width="15"
+                                height="15" class="faq__icon">
+                            <h3 class="faq__subtitle">
+                                La ce folosește organizatorul?
+                            </h3>
+                            <p class="faq__desc">
+                                Organizatorul este o opțiune excelentă pentru a păstra ordinea în portbagajul mașinii
+                                dvs. și totodată o completare stilată la vehiculul dvs.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+            <div class="footer__block">
+                <a href="index.html" class="footer__logo logo">
+                    EVA_DRIVES
+                </a>
+                <a href="tel:+380962687528" class="footer__contact_link">
+                    Telefon: +380962687528
+                </a>
+                <a href="mailto:evadrives@gmail.com" class="footer__contact_link">
+                    E-mail: evadrives@gmail.com
+                </a>
+            </div>
+            <div class="footer__block footer__links">
+                <a href="#home" class="footer__page_link">
+                    Acasă
+                </a>
+                <a href="#feature" class="footer__page_link">
+                    De ce noi
+                </a>
+                <a href="#catalog" class="footer__page_link">
+                    Catalog
+                </a>
+                <a href="#faq" class="footer__page_link">
+                    Întrebări frecvente
+                </a>
+            </div>
+            <div class="footer__block footer__links">
+                <a href="#work" class="footer__page_link">
+                    Cum lucram
+                </a>
+                <a href="" class="footer__page_link">
+                    Recenzii
+                </a>
+                <a href="" class="footer__page_link">
+                    Politica de confidențialitate
+                </a>
+                <a href="" class="footer__page_link">
+                    Contract de ofertă
+                </a>
+            </div>
+            <div class="footer__block">
+                <p class="footer__sign">
+                    Abonați-vă!
+                </p>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="" class="footer__social_link">
+                            <img src="img/hero/instagram.png" alt="Covorase auto de noua generatie in Romania"
+                                width="16" height="16">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__social_link">
+                            <img src="img/hero/tiktok.png" alt="Covorase auto de noua generatie in Romania" width="16"
+                                height="16">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="" class="footer__social_link">
+                            <img src="img/hero/whatsapp.png" alt="Covorase auto de noua generatie in Romania" width="16"
+                                height="16">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <div class="menu js-menu">
@@ -296,13 +687,13 @@
             </button>
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="" class="menu__link">ACASĂ</a>
+                    <a href="#home" class="menu__link">ACASĂ</a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link">DESPRE NOI</a>
+                    <a href="#feature" class="menu__link">DESPRE NOI</a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link">CATEGORII PRODUSE</a>
+                    <a href="#catalog" class="menu__link">CATEGORII PRODUSE</a>
                 </li>
                 <li class="menu__item">
                     <a href="" class="menu__link">RECENZII</a>
@@ -311,10 +702,10 @@
                     <a href="" class="menu__link">GALERIE</a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link">FAQ</a>
+                    <a href="#faq" class="menu__link">FAQ</a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link">CONTACTAŢI-NE</a>
+                    <a href="#order" class="menu__link">CONTACTAŢI-NE</a>
                 </li>
                 <li class="menu__item">
                     <a href="" class="menu__link">ENG</a>
@@ -326,14 +717,14 @@
     <div class="navigation">
         <ul class="navigation__list">
             <li class="navigation__item">
-                <a href="" class="navigation__link">
+                <a href="#home" class="navigation__link">
                     <img src="img/navigation/icon1.png" alt="Covorase auto de noua generatie in Romania" width="27"
                         height="27">
                     <span>ACASĂ</span>
                 </a>
             </li>
             <li class="navigation__item">
-                <a href="" class="navigation__link">
+                <a href="#catalog" class="navigation__link">
                     <img src="img/navigation/icon2.png" alt="Covorase auto de noua generatie in Romania" width="27"
                         height="27">
                     <span>
@@ -349,7 +740,7 @@
                 </a>
             </li>
             <li class="navigation__item">
-                <a href="" class="navigation__link">
+                <a href="#order" class="navigation__link">
                     <img src="img/navigation/icon4.png" alt="Covorase auto de noua generatie in Romania" width="27"
                         height="27">
                     <span>CONTACTAŢI-NE</span>
@@ -358,7 +749,18 @@
         </ul>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"
+        integrity="sha512-IKDNPsyNuvwDr8D2nIcJVgNFuj3XXdV0jJ5S6E+nYwl5RiLxrd51TnDJDN1lQJrVdF4K849Lizr12ZCZV81MoA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/jquery.event.move.js"></script>
+    <script defer src="js/jquery.twentytwenty.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
+
+    <script>
+
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,35 @@
+.before {
+    padding: 7.5rem 0;
+    background-color: #000000;
+
+    @media screen and (max-width:767px) {
+        padding: 5rem 0;
+    }
+
+    .container {
+        max-width: 60rem;
+        padding: 0;
+
+        @media screen and (max-width:767px) {
+            max-width: 37rem;
+        }
+
+        @media screen and (max-width:390px) {
+            max-width: 32rem;
+        }
+    }
+}
+
+.before__title {
+    font-size: 5.6rem;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    @media screen and (max-width:1200px) {
+        font-size: 4.7rem;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 3.8rem;
+    }
+}

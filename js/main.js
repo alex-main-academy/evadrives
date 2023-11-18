@@ -29,3 +29,59 @@ const handleMenuClose = () => {
 
 openMenuBtn.addEventListener("click", handleMenuOpen);
 closeMenuBtn.addEventListener("click", handleMenuClose);
+
+// work with twenty twenty library
+$(document).ready(function () {
+    $("#beforeAfterContainer").twentytwenty();
+});
+
+// work with slider
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    slidesPerView: 3,
+    initialSlide: 10,
+    simulateTouch: true,
+});
+
+// work with gallery
+const gallery = new SimpleLightbox(".gallery a", { captionDelay: 250 });
+
+// work with faq section
+const faqItems = document.querySelectorAll(".faq__item");
+let faqToggle = false;
+
+faqItems.forEach((elem) => {
+    elem.addEventListener("click", () => {
+        if (elem.classList.contains("active")) {
+            elem.classList.remove("active");
+        } else {
+            faqItems.forEach((el) => {
+                el.classList.remove("active");
+            });
+
+            elem.classList.add("active");
+        }
+    });
+});
+
+// work with anchors link
+function scrollToAnchor(anchorId) {
+    const targetElement = document.getElementById(anchorId);
+    if (targetElement) {
+        const offsetTop = targetElement.offsetTop - 50;
+        window.scrollTo({
+            top: offsetTop,
+            behavior: "smooth",
+        });
+    }
+}
+
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+anchorLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const anchorId = this.getAttribute("href").substring(1);
+        scrollToAnchor(anchorId);
+        handleMenuClose();
+    });
+});
