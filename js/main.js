@@ -38,9 +38,18 @@ $(document).ready(function () {
 // work with slider
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 0,
-    slidesPerView: 3,
+    slidesPerView: 1,
     initialSlide: 10,
     simulateTouch: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 3,
+        },
+    },
 });
 
 // work with gallery

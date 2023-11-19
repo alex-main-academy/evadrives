@@ -126,3 +126,21 @@ const handleCloseGallery = () => {
 
 openGalleryBtn.addEventListener("click", handleOpenGallery);
 closeGalleryBtn.addEventListener("click", handleCloseGallery);
+
+// work with modal form
+const overlay = document.querySelector(".js-overlay");
+const formCloseBtn = document.querySelector(".js-form-close");
+const formOpenBtn = document.querySelector(".js-form-open");
+
+const handleFormOpen = () => {
+    document.body.classList.add("is-menu-open");
+    overlay.classList.add("is-form-open");
+};
+
+const handleFormClose = () => {
+    document.body.classList.remove("is-menu-open");
+    overlay.classList.remove("is-form-open");
+};
+
+formOpenBtn.addEventListener("click", handleFormOpen);
+formCloseBtn.addEventListener("click", handleFormClose);
