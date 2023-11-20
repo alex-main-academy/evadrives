@@ -57,15 +57,22 @@
         color: var(--black-text-color);
     }
 
+    .form__subtitle {
+        color: var(--black-text-color);
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
     .form__input {
         height: 5rem;
         padding: 0 2.4rem;
         background-color: #21243D1F;
         border-bottom: .2rem solid var(--red-back-color);
         font-size: 1.5rem;
+        color: var(--black-text-color);
 
         &::placeholder {
-            color: var(--light-text-color);
+            color: var(--black-text-color)
         }
     }
 
@@ -77,9 +84,10 @@
         font-size: 1.5rem;
         outline: none;
         resize: none;
+        color: var(--black-text-color);
 
         &::placeholder {
-            color: var(--light-text-color);
+            color: var(--black-text-color)
         }
     }
 
@@ -98,35 +106,6 @@
         font-size: 1.5rem;
         font-weight: 700;
         color: var(--primary-text-color);
-
-        transition-duration: 300ms;
-
-        &:hover {
-            background-color: transparent;
-            color: var(--black-text-color);
-        }
-
-        @media screen and (max-width:767px) {
-            width: 100%;
-        }
-    }
-
-    .form__link {
-        width: 28.6rem;
-        height: 6.6rem;
-        margin: 0 auto;
-        border-radius: .5rem;
-        background-color: rgb(35, 216, 35);
-        border: .3rem solid rgb(35, 216, 35);
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: var(--primary-text-color);
-        text-decoration: none;
 
         transition-duration: 300ms;
 

@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Set de bază</title>
-    <link rel="shortcut icon" type="image/x-icon" href="">
+    <meta name="description"
+        content="Descoperă covorașele auto de ultimă generație în România, cu design modern și performanțe superioare. Alege protecția perfectă pentru interiorul mașinii tale cu covorașe auto de înaltă calitate, potrivite pentru orice marcă și model.">
+    <meta name="keywords"
+        content="Covorașe auto, Covorașe auto de nouă generație, Design modern, Protecție auto, Interior mașină, Calitate înaltă, Marcă și model, Accesorii auto, Covorase personalizate, Inovație auto">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -101,13 +107,13 @@
                     <span class="product__yes">În stoc</span>
                     <h2 class="product__title">Set de bază</h2>
                     <div class="product__prices">
-                        <span class="product__price_old">1 280,00UAH</span>
-                        <span class="product__price_new">1 100,00UAH</span>
+                        <span class="product__price_old"><b class="js-old-price">1 280,00</b> RON</span>
+                        <span class="product__price_new"><b class="js-new-price">1 100,00</b> RON</span>
                     </div>
                     <div class="product__choose">
                         <label class="product__choose_color product__choose_item">
                             <span>Culoare covor:</span>
-                            <select class="product__select js-select-color">
+                            <select class="product__select js-select-color js-example-basic-single">
                                 <option value="black">Negru</option>
                                 <option value="gray">Gri</option>
                                 <option value="brown">Maro</option>
@@ -121,7 +127,7 @@
                         </label>
                         <label class="product__choose_border product__choose_item">
                             <span>Culoare tivire:</span>
-                            <select class="product__select js-select-border">
+                            <select class="product__select js-select-border js-example-basic-single">
                                 <option value="black">Negru</option>
                                 <option value="gray">Gri</option>
                                 <option value="brown">Maro</option>
@@ -136,15 +142,21 @@
                     </div>
                     <label class="product__choose_firm product__choose_item">
                         <span>Plachetă cu logo (emblema mașinii):</span>
-                        <select class="product__select">
-                            <option value="">Nu</option>
-                            <option value="">1 plachetă</option>
-                            <option value="">2 plachete</option>
+                        <select class="product__select js-select-logo js-example-basic-single">
+                            <option value="1 100, 00" data-old="1 280, 00">Nu</option>
+                            <option value="1 200, 00" data-old="1 380, 00">1 plachetă</option>
+                            <option value="1 300, 00" data-old="1 480, 00">2 plachete</option>
                         </select>
                     </label>
                     <div class="product__order">
-                        <input type="number" value="1" min="0" step="1" max="100" class="product__order_count">
                         <button class="product__order_button js-form-open">Comandă produsul</button>
+                        <p class="product__order_whatsapp_subtitle">
+                            Puteți scrie direct pe WhatsApp
+                        </p>
+                        <a href="https://wa.me/40799570044" class="product__whatsapp_link">
+                            Comandă prin WhatsApp
+                            <img src="img/hero/whatsapp.png" alt="" width="20" height="20">
+                        </a>
                     </div>
                     <div class="order__description">
                         <p class="order__description_title">Descriere</p>
@@ -152,7 +164,7 @@
                             Setul include 2 covoare pentru scaunele din față la autoturism
                         </p>
                         <p class="order__description_text">
-                            Preț pentru rândul din față al microbuzelor - 1390 UAH
+                            Preț pentru rândul din față al microbuzelor - 1390 RON
                         </p>
                         <br>
                         <p class="order__description_text">
@@ -163,6 +175,12 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="product__example">
+            <div class="container">
+                <img src="img/product_1/example-img.jpg" alt="" width="370" class="product__example_img">
             </div>
         </section>
     </main>
@@ -214,19 +232,19 @@
                 </p>
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a href="" class="footer__social_link">
+                        <a href="https://www.instagram.com/Eva_drive_ro/" class="footer__social_link">
                             <img src="img/hero/instagram.png" alt="Covorase auto de noua generatie in Romania"
                                 width="16" height="16">
                         </a>
                     </li>
                     <li class="footer__item">
-                        <a href="" class="footer__social_link">
+                        <a href="https://www.tiktok.com/@eva_drive_ro" class="footer__social_link">
                             <img src="img/hero/tiktok.png" alt="Covorase auto de noua generatie in Romania" width="16"
                                 height="16">
                         </a>
                     </li>
                     <li class="footer__item">
-                        <a href="" class="footer__social_link">
+                        <a href="https://wa.me/40799570044" class="footer__social_link">
                             <img src="img/hero/whatsapp.png" alt="Covorase auto de noua generatie in Romania" width="16"
                                 height="16">
                         </a>
@@ -243,13 +261,13 @@
             </button>
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#home" class="menu__link">ACASĂ</a>
+                    <a href="index.html#home" class="menu__link">ACASĂ</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#feature" class="menu__link">DESPRE NOI</a>
+                    <a href="index.html#feature" class="menu__link">DESPRE NOI</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#catalog" class="menu__link">CATEGORII PRODUSE</a>
+                    <a href="index.html#catalog" class="menu__link">CATEGORII PRODUSE</a>
                 </li>
                 <li class="menu__item">
                     <a href="" class="menu__link">RECENZII</a>
@@ -258,13 +276,33 @@
                     <a href="" class="menu__link">GALERIE</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#faq" class="menu__link">FAQ</a>
+                    <a href="index.html#faq" class="menu__link">FAQ</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#order" class="menu__link">CONTACTAŢI-NE</a>
+                    <a href="index.html#order" class="menu__link">CONTACTAŢI-NE</a>
                 </li>
                 <li class="menu__item">
                     <a href="" class="menu__link">ENG</a>
+                </li>
+            </ul>
+            <ul class="menu__social_list">
+                <li class="menu__item">
+                    <a href="https://www.instagram.com/Eva_drive_ro/" class="menu__social_link">
+                        <img src="img/hero/instagram.png" alt="Covorase auto de noua generatie in Romania" width="16"
+                            height="16">
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="https://www.tiktok.com/@eva_drive_ro" class="menu__social_link">
+                        <img src="img/hero/tiktok.png" alt="Covorase auto de noua generatie in Romania" width="16"
+                            height="16">
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="https://wa.me/40799570044" class="menu__social_link">
+                        <img src="img/hero/whatsapp.png" alt="Covorase auto de noua generatie in Romania" width="16"
+                            height="16">
+                    </a>
                 </li>
             </ul>
         </div>
@@ -690,24 +728,63 @@
             <input type="text" name="name" minlength="3" class="form__input" required placeholder="Nume Prenume">
             <input type="tel" name="phone" minlength="8" maxlength="20" class="form__input" required pattern="[0-9+]*"
                 placeholder="Număr de telefon">
+            <span class="form__subtitle">Introduceți caracteristicile mașinii</span>
             <input type="text" name="auto" minlength="2" class="form__input" required placeholder="Marca automobilului">
             <input type="text" name="model" minlength="2" class="form__input" required
                 placeholder="Model și anul automobilului">
+            <span class="form__subtitle">Introdu adresa ta de livrare</span>
             <input type="text" name="country" minlength="3" class="form__input" required placeholder="Judet">
             <input type="text" name="city" minlength="3" class="form__input" required placeholder="Oras sau Localitate">
             <input type="text" name="address" minlength="3" class="form__input" required
                 placeholder="Strada/Număr/Bloc/Apartament">
             <textarea name="comment" class="form__textarea" placeholder="Comentariu la comandă"></textarea>
             <button type="submit" class="form__button">Trimite comanda</button>
-            <a href="" class="form__link">
-                Comandă prin WhatsApp
-            </a>
         </form>
     </div>
 
-    <script defer src="js/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/order.js"></script>
+
+    <script defer>
+        jQuery(document).ready(function () {
+            jQuery('.js-example-basic-single').select2({
+                minimumResultsForSearch: Infinity
+            });
+
+            jQuery('.js-select-color').on('change', function (event) {
+                updateMainSliderImage();
+            });
+
+            jQuery('.js-select-border').on('change', function (event) {
+                updateMainSliderImage();
+            });
+
+            function updateMainSliderImage() {
+                const mainSliderImage = jQuery(".swiper-slide-active img");
+                const currentColor = jQuery('.js-select-color').val();
+                const currentBorder = jQuery('.js-select-border').val();
+
+                if (currentColor === "haki" || currentColor === "purple") {
+                    mainSliderImage.attr(
+                        "src",
+                        `img/product_1/${currentColor}_black.jpg`
+                    );
+                } else {
+                    mainSliderImage.attr(
+                        "src",
+                        `img/product_1/${currentColor}_${currentBorder}.jpg`
+                    );
+                }
+            }
+
+            jQuery('.js-select-logo').on('change', function () {
+                const selectedOption = jQuery(this).find(':selected');
+                jQuery('.js-old-price').text(selectedOption.attr('data-old'));
+                jQuery('.js-new-price').text(jQuery(this).val());
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -70,44 +70,44 @@ openMenuBtn.addEventListener("click", handleMenuOpen);
 closeMenuBtn.addEventListener("click", handleMenuClose);
 
 // work with change colors
-const selectColors = document.querySelector(".js-select-color");
-const selectBorder = document.querySelector(".js-select-border");
+// const selectColors = document.querySelector(".js-select-color");
+// const selectBorder = document.querySelector(".js-select-border");
 
-selectColors.addEventListener("change", (event) => {
-    const mainSliderImage = document.querySelector(".swiper-slide-active img");
-    const currentColor = event.target.value;
-    const currentBorder = selectBorder.value;
+// selectColors.addEventListener("change", (event) => {
+//     const mainSliderImage = document.querySelector(".swiper-slide-active img");
+//     const currentColor = event.target.value;
+//     const currentBorder = selectBorder.value;
 
-    if (currentColor === "haki" || currentColor === "purple") {
-        mainSliderImage.setAttribute(
-            "src",
-            `img/product_1/${currentColor}_black.jpg`
-        );
-    } else {
-        mainSliderImage.setAttribute(
-            "src",
-            `img/product_1/${currentColor}_${currentBorder}.jpg`
-        );
-    }
-});
+//     if (currentColor === "haki" || currentColor === "purple") {
+//         mainSliderImage.setAttribute(
+//             "src",
+//             `img/product_1/${currentColor}_black.jpg`
+//         );
+//     } else {
+//         mainSliderImage.setAttribute(
+//             "src",
+//             `img/product_1/${currentColor}_${currentBorder}.jpg`
+//         );
+//     }
+// });
 
-selectBorder.addEventListener("change", (event) => {
-    const mainSliderImage = document.querySelector(".swiper-slide-active img");
-    const currentBorder = event.target.value;
-    const currentColor = selectColors.value;
+// selectBorder.addEventListener("change", (event) => {
+//     const mainSliderImage = document.querySelector(".swiper-slide-active img");
+//     const currentBorder = event.target.value;
+//     const currentColor = selectColors.value;
 
-    if (currentColor === "haki" || currentColor === "purple") {
-        mainSliderImage.setAttribute(
-            "src",
-            `img/product_1/${currentColor}_black.jpg`
-        );
-    } else {
-        mainSliderImage.setAttribute(
-            "src",
-            `img/product_1/${currentColor}_${currentBorder}.jpg`
-        );
-    }
-});
+//     if (currentColor === "haki" || currentColor === "purple") {
+//         mainSliderImage.setAttribute(
+//             "src",
+//             `img/product_1/${currentColor}_black.jpg`
+//         );
+//     } else {
+//         mainSliderImage.setAttribute(
+//             "src",
+//             `img/product_1/${currentColor}_${currentBorder}.jpg`
+//         );
+//     }
+// });
 
 // work with gallery
 const galleryElement = document.querySelector(".js-gallery");
@@ -144,3 +144,15 @@ const handleFormClose = () => {
 
 formOpenBtn.addEventListener("click", handleFormOpen);
 formCloseBtn.addEventListener("click", handleFormClose);
+
+// work with add logo and change price
+// const selectLogo = document.querySelector(".js-select-logo");
+// const oldProductPrice = document.querySelector(".js-old-price");
+// const newProductPrice = document.querySelector(".js-new-price");
+
+// selectLogo.addEventListener("change", (event) => {
+//     const elem = event.target;
+//     const selectedOption = selectLogo.options[selectLogo.selectedIndex];
+//     oldProductPrice.textContent = selectedOption.getAttribute("data-old");
+//     newProductPrice.textContent = elem.value;
+// });
