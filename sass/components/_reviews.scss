@@ -1,0 +1,66 @@
+.reviews__page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .header {
+        position: relative;
+        background-color: #000000;
+        padding: 2.5rem 0;
+    }
+
+    .header__menu {
+        @media screen and (max-width:767px) {
+            display: block;
+        }
+    }
+
+    .header__lang {
+        margin-left: 7rem;
+    }
+
+    .reviews {
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+        border-top: .1rem solid rgb(38, 38, 38);
+    }
+
+    .reviews__title {
+        font-size: 6rem;
+        text-align: center;
+        margin-bottom: 5rem;
+
+        @media screen and (max-width:1200px) {
+            font-size: 4.5rem;
+        }
+
+        @media screen and (max-width:767px) {
+            font-size: 3.2rem;
+            line-height: 1.5;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .footer {
+        margin-top: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+
+        @media screen and (max-width:767px) {
+            display: block;
+
+            &::after {
+                color: #000000;
+            }
+        }
+    }
+
+    .swiper-slide {
+        @media screen and (max-width:767px) {
+            height: 45rem;
+        }
+    }
+}

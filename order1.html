@@ -11,6 +11,9 @@
         content="Covorașe auto, Covorașe auto de nouă generație, Design modern, Protecție auto, Interior mașină, Calitate înaltă, Marcă și model, Accesorii auto, Covorase personalizate, Inovație auto">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.css"
+        integrity="sha512-ka1/Z+PCN6JAoOVT50Ujjhq74r3hE0r433lM5X3VlLmxXRRkAJIPSXiZlccGx6Syd56QW+rPoYaLHm5iIPthLg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/index.css">
@@ -34,7 +37,7 @@
                         <a href="index.html#catalog" class="header__link">CATEGORII PRODUSE</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">RECENZII</a>
+                        <a href="reviews.html" class="header__link">RECENZII</a>
                     </li>
                     <li class="header__item">
                         <a href="#" class="header__link">GALERIE</a>
@@ -65,8 +68,8 @@
         <section class="product">
             <div class="container">
                 <div class="product__slider">
-                    <div class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
+                    <div class="swiper mySwiper2 swiper-order-main">
+                        <div class="swiper-wrapper js-gallery-open">
                             <div class="swiper-slide">
                                 <img src="img/product_1/img1.png" alt="">
                             </div>
@@ -178,9 +181,94 @@
             </div>
         </section>
 
-        <section class="product__example">
+        <section class="example">
             <div class="container">
-                <img src="img/product_1/example-img.jpg" alt="" width="370" class="product__example_img">
+                <div class="swiper mySwiper5">
+                    <div class="swiper-wrapper gallery">
+                        <a href="img/example/img1.jpg" class="swiper-slide">
+                            <img src="img/example/img1.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img2.jpg" class="swiper-slide">
+                            <img src="img/example/img2.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img3.jpg" class="swiper-slide">
+                            <img src="img/example/img3.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img4.jpg" class="swiper-slide">
+                            <img src="img/example/img4.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img5.jpg" class="swiper-slide">
+                            <img src="img/example/img5.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img6.jpg" class="swiper-slide">
+                            <img src="img/example/img6.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img7.jpg" class="swiper-slide">
+                            <img src="img/example/img7.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img8.jpg" class="swiper-slide">
+                            <img src="img/example/img8.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img9.jpg" class="swiper-slide">
+                            <img src="img/example/img9.jpg" alt="Covorase auto de noua generatie in Romania" width="390"
+                                class="example__image_item">
+                        </a>
+                        <a href="img/example/img10.jpg" class="swiper-slide">
+                            <img src="img/example/img10.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img11.jpg" class="swiper-slide">
+                            <img src="img/example/img11.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img12.jpg" class="swiper-slide">
+                            <img src="img/example/img12.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img13.jpg" class="swiper-slide">
+                            <img src="img/example/img13.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img14.jpg" class="swiper-slide">
+                            <img src="img/example/img14.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img15.jpg" class="swiper-slide">
+                            <img src="img/example/img15.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img16.jpg" class="swiper-slide">
+                            <img src="img/example/img16.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img17.jpg" class="swiper-slide">
+                            <img src="img/example/img17.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img18.jpg" class="swiper-slide">
+                            <img src="img/example/img18.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img19.jpg" class="swiper-slide">
+                            <img src="img/example/img19.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                        <a href="img/example/img20.jpg" class="swiper-slide">
+                            <img src="img/example/img20.jpg" alt="Covorase auto de noua generatie in Romania"
+                                width="390" class="example__image_item">
+                        </a>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
         </section>
     </main>
@@ -216,7 +304,7 @@
                 <a href="index.html#work" class="footer__page_link">
                     Cum lucram
                 </a>
-                <a href="" class="footer__page_link">
+                <a href="reviews.html" class="footer__page_link">
                     Recenzii
                 </a>
                 <a href="" class="footer__page_link">
@@ -270,7 +358,7 @@
                     <a href="index.html#catalog" class="menu__link">CATEGORII PRODUSE</a>
                 </li>
                 <li class="menu__item">
-                    <a href="" class="menu__link">RECENZII</a>
+                    <a href="reviews.html" class="menu__link">RECENZII</a>
                 </li>
                 <li class="menu__item">
                     <a href="" class="menu__link">GALERIE</a>
@@ -742,6 +830,9 @@
         </form>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"
+        integrity="sha512-IKDNPsyNuvwDr8D2nIcJVgNFuj3XXdV0jJ5S6E+nYwl5RiLxrd51TnDJDN1lQJrVdF4K849Lizr12ZCZV81MoA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/order.js"></script>
@@ -761,7 +852,7 @@
             });
 
             function updateMainSliderImage() {
-                const mainSliderImage = jQuery(".swiper-slide-active img");
+                const mainSliderImage = jQuery(".swiper-order-main .swiper-slide-active img");
                 const currentColor = jQuery('.js-select-color').val();
                 const currentBorder = jQuery('.js-select-border').val();
 

@@ -69,49 +69,9 @@ const handleMenuClose = () => {
 openMenuBtn.addEventListener("click", handleMenuOpen);
 closeMenuBtn.addEventListener("click", handleMenuClose);
 
-// work with change colors
-// const selectColors = document.querySelector(".js-select-color");
-// const selectBorder = document.querySelector(".js-select-border");
-
-// selectColors.addEventListener("change", (event) => {
-//     const mainSliderImage = document.querySelector(".swiper-slide-active img");
-//     const currentColor = event.target.value;
-//     const currentBorder = selectBorder.value;
-
-//     if (currentColor === "haki" || currentColor === "purple") {
-//         mainSliderImage.setAttribute(
-//             "src",
-//             `img/product_1/${currentColor}_black.jpg`
-//         );
-//     } else {
-//         mainSliderImage.setAttribute(
-//             "src",
-//             `img/product_1/${currentColor}_${currentBorder}.jpg`
-//         );
-//     }
-// });
-
-// selectBorder.addEventListener("change", (event) => {
-//     const mainSliderImage = document.querySelector(".swiper-slide-active img");
-//     const currentBorder = event.target.value;
-//     const currentColor = selectColors.value;
-
-//     if (currentColor === "haki" || currentColor === "purple") {
-//         mainSliderImage.setAttribute(
-//             "src",
-//             `img/product_1/${currentColor}_black.jpg`
-//         );
-//     } else {
-//         mainSliderImage.setAttribute(
-//             "src",
-//             `img/product_1/${currentColor}_${currentBorder}.jpg`
-//         );
-//     }
-// });
-
 // work with gallery
 const galleryElement = document.querySelector(".js-gallery");
-const openGalleryBtn = document.querySelector(".js-gallery-open");
+const openGalleryBtn = document.querySelectorAll(".js-gallery-open");
 const closeGalleryBtn = document.querySelector(".js-gallery-close");
 
 const handleOpenGallery = () => {
@@ -124,7 +84,10 @@ const handleCloseGallery = () => {
     galleryElement.classList.remove("is-gallery-open");
 };
 
-openGalleryBtn.addEventListener("click", handleOpenGallery);
+openGalleryBtn.forEach((elem) => {
+    elem.addEventListener("click", handleOpenGallery);
+});
+
 closeGalleryBtn.addEventListener("click", handleCloseGallery);
 
 // work with modal form
@@ -145,14 +108,40 @@ const handleFormClose = () => {
 formOpenBtn.addEventListener("click", handleFormOpen);
 formCloseBtn.addEventListener("click", handleFormClose);
 
-// work with add logo and change price
-// const selectLogo = document.querySelector(".js-select-logo");
-// const oldProductPrice = document.querySelector(".js-old-price");
-// const newProductPrice = document.querySelector(".js-new-price");
+// work with slider
+const swiper5 = new Swiper(".mySwiper5", {
+    spaceBetween: 0,
+    slidesPerView: 1,
+    initialSlide: 10,
+    simulateTouch: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 3,
+        },
+    },
+});
 
-// selectLogo.addEventListener("change", (event) => {
-//     const elem = event.target;
-//     const selectedOption = selectLogo.options[selectLogo.selectedIndex];
-//     oldProductPrice.textContent = selectedOption.getAttribute("data-old");
-//     newProductPrice.textContent = elem.value;
-// });
+// work with gallery
+const gallery = new SimpleLightbox(".gallery a", { captionDelay: 250 });
+
+// work with faq section
+const faqItems = document.querySelectorAll(".faq__item");
+let faqToggle = false;
+
+faqItems.forEach((elem) => {
+    elem.addEventListener("click", () => {
+        if (elem.classList.contains("active")) {
+            elem.classList.remove("active");
+        } else {
+            faqItems.forEach((el) => {
+                el.classList.remove("active");
+            });
+
+            elem.classList.add("active");
+        }
+    });
+});

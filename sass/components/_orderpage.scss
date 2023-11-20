@@ -19,15 +19,15 @@
 
     .product {
         padding-top: 10rem;
-        padding-bottom: 20rem;
+        padding-bottom: 5rem;
         color: var(--gray-text-color);
 
         @media screen and (max-width:1200px) {
-            padding-bottom: 10rem;
+            padding-bottom: 5rem;
         }
 
         @media screen and (max-width:767px) {
-            padding: 4rem 0;
+            padding: 4rem 0 7rem 0;
         }
     }
 
@@ -201,6 +201,7 @@
             font-size: 1.8rem;
             color: var(--black-text-color);
             font-weight: 600;
+            text-align: center;
         }
 
         .product__whatsapp_link {
@@ -281,12 +282,53 @@
         line-height: 1.8;
     }
 
-    .product__example_img {
-        display: none;
+    .example {
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
 
-        @media screen and (max-width:767px) {
-            display: block;
-            max-width: 100%;
+            @media screen and (max-width:767px) {
+                display: block;
+
+                &::after {
+                    color: var(--red-back-color);
+                }
+            }
+        }
+
+        .swiper-slide {
+            width: 39rem;
+            height: 47rem;
+
+            @media screen and (max-width:1200px) {
+                height: 30rem;
+            }
+
+            @media screen and (max-width:767px) {
+                height: 35rem;
+            }
+        }
+
+        .example__image_item {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sl-wrapper {
+            background-color: #000000ce;
+        }
+
+        .sl-wrapper .sl-close {
+            color: #FFFFFF;
+        }
+
+        .sl-wrapper .sl-navigation button {
+            color: #FFFFFF;
+        }
+
+        .sl-wrapper .sl-counter {
+            color: #FFFFFF;
         }
     }
 }
