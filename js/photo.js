@@ -1,22 +1,7 @@
-// work with slider
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 15,
-    slidesPerView: 1,
-    initialSlide: 2,
-    simulateTouch: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        767: {
-            slidesPerView: 3,
-        },
-    },
-});
-
 // work with gallery
-const gallery = new SimpleLightbox(".gallery a", { captionDelay: 250 });
+if (typeof SimpleLightbox !== "undefined") {
+    const gallery = new SimpleLightbox(".gallery a", { captionDelay: 250 });
+}
 
 // work with anchors link
 function scrollToAnchor(anchorId) {
